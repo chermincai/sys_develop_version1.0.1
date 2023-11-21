@@ -1,0 +1,635 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="不良信息识别系统">
+    <meta name="author" content="AI-Vision-Team">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="{% static 'img/cuc-img.jpg' %}">
+
+    <title>不良信息识别系统</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
+    <!-- external css -->
+    <!-- font icon -->
+    <link href="{% static 'css/elegant-icons-style.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+    <!-- full calendar css -->
+    <link href="{% static 'assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/fullcalendar/fullcalendar/fullcalendar.css' %}" rel="stylesheet" />
+    <!-- easy pie chart -->
+    <link href="{% static 'assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css' %}" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css">
+    <link href="{% static 'css/jquery-jvectormap-1.2.2.css' %}" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{% static 'css/fullcalendar.css' %}">
+    <link href="{% static 'css/widgets.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style-responsive.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/xcharts.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jquery-ui-1.10.4.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/dataset.css' %}" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+
+</head>
+<body>
+<section id="container" class="">
+     <header class="header dark-bg">
+         <!--logo start-->
+          <a href="index.html" class="logo">不良信息 <span class="lite">识别系统</span></a>
+         <!--logo end-->
+         <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+
+                    <!-- task notificatoin start -->
+                    <li id="task_notificatoin_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="icon-task-l">
+                             <span class="badge bg-important">6</span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <li>
+                                <p class="blue">You have 6 pending letter</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Design PSD </div>
+                                        <div class="percent">90%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                            <span class="sr-only">90% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">
+                                            Project 1
+                                        </div>
+                                        <div class="percent">30%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                            <span class="sr-only">30% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Digital Marketing</div>
+                                        <div class="percent">80%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Logo Designing</div>
+                                        <div class="percent">78%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
+                                            <span class="sr-only">78% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Mobile App</div>
+                                        <div class="percent">50%</div>
+                                    </div>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar"  role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                            <span class="sr-only">50% Complete</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="#">See All Tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- task notificatoin end -->
+                    <!-- inbox notificatoin start-->
+                    <li id="mail_notificatoin_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="icon-envelope-l"></i>
+                            <span class="badge bg-important">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <li>
+                                <p class="blue">You have 5 new messages</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Greg  Martin</span>
+                                    <span class="time">1 min</span>
+                                    </span>
+                                    <span class="message">
+                                        I really like this admin panel.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Bob   Mckenzie</span>
+                                    <span class="time">5 mins</span>
+                                    </span>
+                                    <span class="message">
+                                     Hi, What is next project plan?
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Phillip   Park</span>
+                                    <span class="time">2 hrs</span>
+                                    </span>
+                                    <span class="message">
+                                        I am like to buy this Admin Template.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Ray   Munoz</span>
+                                    <span class="time">1 day</span>
+                                    </span>
+                                    <span class="message">
+                                        Icon fonts are great.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">See all messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox notificatoin end -->
+                    <!-- alert notification start-->
+                    <li id="alert_notificatoin_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                            <i class="icon-bell-l"></i>
+                            <span class="badge bg-important">7</span>
+                        </a>
+                        <ul class="dropdown-menu extended notification">
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <li>
+                                <p class="blue">You have 4 new notifications</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary"><i class="icon_profile"></i></span>
+                                    Friend Request
+                                    <span class="small italic pull-right">5 mins</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-warning"><i class="icon_pin"></i></span>
+                                    John location.
+                                    <span class="small italic pull-right">50 mins</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-danger"><i class="icon_book_alt"></i></span>
+                                    Project 3 Completed.
+                                    <span class="small italic pull-right">1 hr</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-success"><i class="icon_like"></i></span>
+                                    Mick appreciated your work.
+                                    <span class="small italic pull-right"> Today</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">See all notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- alert notification end-->
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <img alt="" src="img/avatar1_small.jpg">
+                            </span>
+                            <span class="username">Chen Kaixin</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="#"><i class="icon_profile"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon_chat_alt"></i> Chats</a>
+                            </li>
+                            <li>
+                                <a href="login1.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                            <li>
+                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                            </li>
+                            <li>
+                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+     </header>
+     <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">
+                  <li class="active">
+                      <a class="" href="{% url 'home:introduction' %}">
+                          <i class="icon_house_alt"></i>
+                          <span>工具介绍</span>
+                      </a>
+                  </li>
+				  <li>
+                      <a class="" href="{% url 'home:dataset' %}">
+                          <i class="icon_datareport"></i>
+                          <span>数据集</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="tool-box.html">
+                          <i class="icon_box-selected"></i>
+                          <span>工具箱</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="fa fa-laptop"></i>
+                          <span>在线检测平台</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="{% url 'home:text_test' %}">文本检测</a></li>
+                          <li><a class="" href="{% url 'home:img_test' %}">图片检测</a></li>
+                          <li><a class="" href="{% url 'home:short_video_test' %}">短视频检测</a></li>
+                          <li><a class="" href="{% url 'home:long_video_test' %}">长视频检测</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="" href="tool-box.html">
+                          <i class="icon_genius"></i>
+                          <span>数据统计</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_table"></i>
+                          <span>场景应用</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                         <li class="sub-menu">
+                           <a href="javascript:;" class="">
+                            <i class="icon_table"></i>
+                            <span>社交平台</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                           </a>
+                           <ul class="sub">
+                            <li><a class="" href="#">新浪微博</a></li>
+                           </ul>
+                         </li>
+                         <li class="sub-menu">
+                           <a href="javascript:;" class="">
+                            <i class="icon_table"></i>
+                            <span>短视频平台</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                          </a>
+                          <ul class="sub">
+                           <li><a class="" href="#">抖音</a></li>
+                          </ul>
+                         </li>
+                         <li class="sub-menu">
+                           <a href="javascript:;" class="">
+                            <i class="icon_table"></i>
+                            <span>影视平台</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                          </a>
+                          <ul class="sub">
+                           <li><a class="" href="#">哔哩哔哩</a></li>
+                          </ul>
+                         </li>
+                         <li class="sub-menu">
+                           <a href="javascript:;" class="">
+                            <i class="icon_table"></i>
+                            <span>直播平台</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                          </a>
+                          <ul class="sub">
+                           <li><a class="" href="#">虎牙直播</a></li>
+                          </ul>
+                         </li>
+                      </ul>
+                  </li>
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+    <!--main content start-->
+    <section id="main-content">
+        <!--这是主体部分左上方导航栏部分-->
+          <section class="wrapper pb-0 ">
+              <!--overview start-->
+			  <div class="row ">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-laptop"></i> 不良信息识别系统</h3>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+						<li><i class="fa fa-laptop"></i>在线检测平台</li>
+                        <li>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-image moved-svg" viewBox="0 0 16 16">
+                          <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                          <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12V2z"></path>
+                          </svg>&nbsp;数据集
+                        </li>
+					</ol>
+				</div>
+			  </div>
+          </section>
+        <!--文本介绍部分开始-->
+          <section>
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6 ml-3" >
+                   <h2 class="text-primary ml-5">数据集</h2>
+                  </div>
+               </div>
+              </div>
+              <br>
+              <div class="custom-hr"></div>
+          </section>
+          <!--文本介绍部分结束-->
+          <br>
+          <!--数据集列表部分开始-->
+          <section>
+              <div class="container1 bd-example m-0 border-0">
+                 <!--色情类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">色情类不良数据集</h5>
+                      <p class="card-text">性行为或色情内容，例如色情图片、视频等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--色情数据集结束-->
+                 <!--诈骗类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">诈骗类不良数据集</h5>
+                      <p class="card-text">涉及到欺诈行为，例如虚假广告、诈骗电话等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                  </div>
+                 </div>
+                 <!--诈骗类数据集结束-->
+                 <!--涉毒类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">涉毒类不良数据集</h5>
+                      <p class="card-text">涉及到毒品使用和贩卖，例如毒品广告、贩卖毒品等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--涉毒类数据集结束-->
+                 <!--赌博类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">赌博类不良数据集</h5>
+                      <p class="card-text">涉及到赌博行为，例如赌博广告、赌博网站等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--赌博类数据集结束-->
+                 <!--涉政敏感类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">涉政敏感类不良数据集</h5>
+                      <p class="card-text">涉及到政治敏感话题或国家机密，例如宣扬政治主张、攻击国家制度、煽动民族仇恨等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--涉政敏感类数据集结束-->
+                 <!--暴力恐怖类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">暴力恐怖类不良数据集</h5>
+                      <p class="card-text">涉及到暴力、恐怖主义等极端行为，例如宣传恐怖主义思想、教授制造和使用武器等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--暴力恐怖类数据集结束-->
+                 <!--宗教迷信类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">宗教迷信类不良数据集</h5>
+                      <p class="card-text">涉及到宗教迷信活动，例如宣扬邪教思想、崇拜迷信等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--宗教迷信类数据集结束-->
+                 <!--仇恨谩骂类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">仇恨谩骂类不良数据集</h5>
+                      <p class="card-text">涉及到仇恨、谩骂等不良行为，例如对他人进行恶意攻击、侮辱等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--仇恨谩骂类数据集结束-->
+                 <!--不良广告类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">不良广告类不良数据集</h5>
+                      <p class="card-text">涉及到违法或不良的广告内容，例如虚假宣传、误导消费者等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--不良广告类数据集结束-->
+                 <!--自残自杀类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">自残自杀类不良数据集</h5>
+                      <p class="card-text">涉及到自残或自杀行为，例如自残图片、自杀视频等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--自残自杀类数据集结束-->
+                 <!--校园霸凌类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">校园霸凌类不良数据集</h5>
+                      <p class="card-text">涉及到校园霸凌事件，例如校园暴力、欺凌等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--校园霸凌类数据集结束-->
+                 <!--负面社会民生类数据集开始-->
+                 <div class="card" >
+                   <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                       <title>Placeholder</title>
+                       <rect width="100%" height="100%" fill="#868e96"></rect>
+                       <text  class=" img-title" x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                   </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">负面社会民生类不良数据集</h5>
+                      <p class="card-text">涉及到违背公序良俗、传播腐朽堕落生活的行为，例如宣扬奢侈浪费、破坏公共财产的行为等</p>
+                      <a href="#" class="btn btn-primary">查看</a>
+                    </div>
+                 </div>
+                 <!--负面社会民生类数据集结束-->
+              </div>>
+          </section>
+          <!--数据集列表部分结束-->
+    </section>
+    <!--main content ended-->
+</section>
+<!-- javascripts -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-ui-1.10.4.min.js' %}"></script>
+<script src="{% static 'js/jquery-1.8.3.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery-ui-1.9.2.custom.min.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- nice scroll -->
+<script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static 'js/jquery.nicescroll.js' %}" type="text/javascript"></script>
+<!-- charts scripts -->
+<script src="{% static 'assets/jquery-knob/js/jquery.knob.js' %}"></script>
+<script src="{% static 'js/jquery.sparkline.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<!-- jQuery full calendar -->
+<script src="{% static 'js/fullcalendar.min.js' %}"></script> <!-- Full Google Calendar - Calendar -->
+<script src="{% static 'assets/fullcalendar/fullcalendar/fullcalendar.js' %}"></script>
+<!--script for this page only-->
+<script src="{% static 'js/calendar-custom.js' %}"></script>
+<script src="{% static 'js/jquery.rateit.min.js' %}"></script>
+<!-- custom select -->
+<script src="{% static 'js/jquery.customSelect.min.js' %}" ></script>
+<script src="{% static 'assets/chart-master/Chart.js' %}"></script>
+
+<!--custome script for all page-->
+<script src="{% static 'js/scripts.js' %}"></script>
+<!-- custom script for this page-->
+<script src="{% static 'js/sparkline-chart.js' %}"></script>
+<script src="{% static 'js/easy-pie-chart.js' %}"></script>
+<script src="{% static 'js/jquery-jvectormap-1.2.2.min.js' %}"></script>
+<script src="{% static 'js/jquery-jvectormap-world-mill-en.js' %}"></script>
+<script src="{% static 'js/xcharts.min.js' %}"></script>
+<script src="{% static 'js/jquery.autosize.min.js' %}"></script>
+<script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
+<script src="{% static 'js/morris.min.js' %}"></script>
+<script src="{% static 'js/sparklines.js' %}"></script>
+<script src="{% static 'js/charts.js' %}"></script>
+<script src="{% static 'js/jquery.slimscroll.min.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.page-header{
+    margin-bottom: 5px;
+}
+.wrapper {
+  padding-bottom: 0;
+}
+.breadcrumb {
+    margin-bottom:5px;
+}
+.container{
+    margin-left:50px ;
+    height:50px;
+}
+.container1{
+    margin-left:50px ;
+    height:63px;
+    padding-left: 15px;
+}
+.container2{
+    position:relative;
+    width:1220px;
+    margin-left:65px;
+    margin-top: 15px;
+    margin-right:50px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right:15px;
+    background-color: #f8f8f8;
+    border: 2px solid #e6f3f5;;
+    border-radius: 10px;
+    overflow-y: scroll;
+    max-height: 375px; /* 设置最大高度，以触发滚动条 */
+    top:0px;
+}
+.form-group{
+    height:350px;
+}
+
+.custom-hr {
+    border: 1px solid #007BFF;
+    width: 75%;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    height: 0px; /* 将高度设为0，使其成为一条水平线 */
+}
+.custom-input {
+    border: 1px solid #ced4da; /* 初始边框样式 */
+    transition: border-color 0.2s ease-in-out; /* 添加过渡效果 */
+    width: 45%;
+    height:300px;
+    vertical-align:top;
+    margin-top:15px;
+    margin-left: 30px;
+}
+.custom-input:focus {
+    border-color: #007BFF; /* 设置焦点时的边框颜色 */
+    outline: 0; /* 移除默认的聚焦时的轮廓效果 */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* 添加聚焦时的阴影效果 */
+}
+.custom-output{
+    border: 1px solid #ced4da; /* 初始边框样式 */
+    transition: border-color 0.2s ease-in-out; /* 添加过渡效果 */
+    width: 45%;
+    height:300px;
+    vertical-align:top;
+    margin-top:15px;
+    margin-left: 50px;
+}
+.body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+.text_test-button{
+    width:90px;
+    height:30px;
+    position:relative;
+    top:50px;
+    display:block;
+    margin: 0 auto;
+}
+.bar_chart_line{
+    width:19px;
+    height:18px;
+}
