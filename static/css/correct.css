@@ -47,7 +47,7 @@
 .custom-input {
     border: 1px solid #ced4da; /* 初始边框样式 */
     transition: border-color 0.2s ease-in-out; /* 添加过渡效果 */
-    width: 45%;
+    width: 40%;
     height:300px;
     vertical-align:top;
     margin-top:15px;

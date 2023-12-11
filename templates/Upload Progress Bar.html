@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Progress Bar</title>
+    <style>
+        #progress-bar-container {
+            width: 300px;
+            height: 20px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+        
+        #progress-bar {
+            width: 0%;
+            height: 100%;
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Progress Bar</h1>
+
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="file-input" multiple>
+        <button type="submit">Upload</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('upload-form');
+        const progressBarContainer = document.getElementById('progress-bar-container');
+        const progressBar = document.getElementById('progress-bar');
+        //获取html页面中元素
+
+        //以下为表单监听器
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();//阻止页面的刷新
+            const files = document.getElementById('file-input').files;
+            if (files.length > 0) {
+                progressBarContainer.style.display = 'block';//选择文件后，进度条容器显示样式为block,显示进度条
+
+                let totalSize = 0;
+                for (let i = 0; i < files.length; i++) {
+                    totalSize += files[i].size;
+                }//计算所有文件的总大小，保存在totalSize文件中
+
+                //遍历每个文件
+                let uploadedSize = 0;//令当前文件大小累加到uploadedSize里
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    const xhr = new XMLHttpRequest();
+                    xhr.open('POST', '/upload', true);//设置请求方法、URL、异步标志
+                    xhr.upload.addEventListener('progress', (event) => {
+                        if (event.lengthComputable) {
+                            const progress = (event.loaded / event.total) * 100;
+                            progressBar.style.width = progress + '%';
+                        }
+                    });//监听上传进度和变化
+
+
+                    xhr.onreadystatechange = () => {
+                        if (xhr.readyState === XMLHttpRequest.DONE) {
+                            uploadedSize += file.size;
+                            if (uploadedSize === totalSize) {
+                                progressBarContainer.style.display = 'none';//上传大小等于总大小时，隐藏进度条
+                            }
+                        }
+                    };
+                    xhr.send(file);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

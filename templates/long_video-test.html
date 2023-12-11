@@ -302,7 +302,7 @@
                       </a>
                   </li>
                   <li>
-                      <a class="" href="tool-box.html">
+                      <a class="" href="{% url 'home:tool_box' %}">
                           <i class="icon_genius"></i>
                           <span>工具箱</span>
                       </a>
@@ -339,7 +339,7 @@
 				<div class="col-lg-12">
 					<h3 class="page-header"><i class="fa fa-laptop"></i> AI-VISION</h3>
 					<ol class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+						<li><i class="fa fa-home"></i><a class="" href="{% url 'home:introduction' %}">Home</a></li>
 						<li><i class="fa fa-laptop"></i>在线检测平台</li>
                        
                         <li>
@@ -376,6 +376,7 @@
                     <video id="LongVideoInput" alt="Video Preview" style="max-width: 100%;max-height: 300px;display: none;"></video>
                    <textarea class="custom-output" id="LongVideoOutput" placeholder="输出框" style="border: 1px solid #ced4da;transition: border-color 0.2s ease-in-out;width: 45%;height:300px;vertical-align:top;margin-top:15px;margin-left: 50px;"></textarea>
                    <body><button type="button" class="btn btn-primary text_test-button">长视频检测</button></body>
+                </form>>
            </div>
           </div>
       </section>

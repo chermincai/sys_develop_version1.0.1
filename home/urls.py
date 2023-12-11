@@ -9,4 +9,5 @@ urlpatterns = [
     path('online-test/img_test', views.img_test, name='img_test'),
     path('online-test/short_video_test', views.short_video_test, name='short_video_test'),
     path('online-test/long_video_test', views.long_video_test, name='long_video_test'),
+    path('tool_box/', views.tool_box, name='tool_box'),
 ]

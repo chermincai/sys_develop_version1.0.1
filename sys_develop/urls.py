@@ -25,4 +25,5 @@ urlpatterns = [
     # path(r'^logout/', views.logout),
     path('login/',include('login.urls')),
     path('home/', include('home.urls', namespace='home')),
+    path('tool_box/',include('tool_box.urls',namespace='tool_box'))
 ]
